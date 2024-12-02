@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="250.0" prefWidth="700.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reporte.controllers.ControllerPantallaPrincipal">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="240.0" prefWidth="702.0">
+         <children>
+            <ChoiceBox fx:id="cbTipo" layoutX="147.0" layoutY="131.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="131.0" text="Tipo de formato" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBuscar" layoutX="12.0" layoutY="163.0" mnemonicParsing="false" onAction="#pressBuscar" text="Buscar archivo html" />
+            <Button fx:id="btnAplicar" layoutX="527.0" layoutY="198.0" mnemonicParsing="false" onAction="#pressAplicar" text="Imprimir Nuevo Formato" />
+            <TextField fx:id="tfDireccion" layoutX="147.0" layoutY="163.0" prefHeight="25.0" prefWidth="527.0" promptText="Dirección del archivo" />
+            <Label layoutX="490.0" layoutY="68.0" prefHeight="21.0" prefWidth="56.0" text="Idioma" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cbIdioma" layoutX="556.0" layoutY="67.0" prefHeight="25.0" prefWidth="105.0" />
+            <Button fx:id="btnIcnClient" layoutX="9.0" layoutY="198.0" mnemonicParsing="false" onAction="#pressBuscarIcn" prefHeight="25.0" prefWidth="126.0" text="Buscar icono cliente" />
+            <TextField fx:id="tfDireccionIcn" layoutX="147.0" layoutY="197.0" prefHeight="25.0" prefWidth="374.0" promptText="Direccion del icono del cliente" />
+            <ImageView fitHeight="96.0" fitWidth="137.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/36e31d17-fe4a-4828-846e-5634a2e35e03.png" />
+               </image></ImageView>
+            <Label layoutX="249.0" layoutY="14.0" prefHeight="17.0" prefWidth="201.0" text="Formato de Reportes">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Pane>
+   </children>
+</GridPane>
